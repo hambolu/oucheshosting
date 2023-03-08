@@ -80,15 +80,15 @@ class DomainsController extends Controller
 
         if ($data == "OK") {
             if ($domains->check($vars)->response() == 'false') {
-                return 'not available';
+                echo 'not available';
             }
 
             if($domains->check($vars)->response() == 'true'){
-                return 'available';
+                echo 'available';
             }
 
         }else{
-            dd(false);
+            dd('ip error');
         }
         // if ($data->attributes()->Status == "ok") {
         // }

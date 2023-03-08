@@ -41,7 +41,7 @@ class NamecheapResponse {
 	 */
 	public function response() {
 		if ($this->xml && $this->xml instanceof \SimpleXMLElement) {
-			return $this->formatResponse($this->xml->CommandResponse->DomainCheckResult->attributes());
+			return $this->formatResponse($this->xml->CommandResponse);
 		}
 		return null;
 	}
