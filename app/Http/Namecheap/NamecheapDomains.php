@@ -7,7 +7,7 @@ namespace App\Http\Namecheap;
  * @license http://opensource.org/licenses/mit-license.php MIT License
  * @package namecheap.commands
  */
-class NamecheapDomains {
+class NameCheapDomains {
 
 	/**
 	 * @var NamecheapApi

@@ -41,9 +41,17 @@ class NamecheapResponse {
 	 */
 	public function response() {
 		if ($this->xml && $this->xml instanceof \SimpleXMLElement) {
-			return $this->formatResponse($this->xml->CommandResponse);
-		}
-		return null;
+            if ($this->xml && $this->xml instanceof \SimpleXMLElement) {
+                if ($this->formatResponse($this->xml->CommandResponse->DomainCheckResult->attributes()->Available == 'false')) {
+                $status = 0;
+            }
+            if ($this->formatResponse($this->xml->CommandResponse->DomainCheckResult->attributes()->Available == 'true')) {
+                $status = 1;
+            }
+                return $status;
+            }
+        }
+        return null;
 	}
 
 	/**

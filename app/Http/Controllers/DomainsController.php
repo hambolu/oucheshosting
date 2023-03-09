@@ -6,7 +6,7 @@ use App\Models\Domains;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Http\Namecheap\NameCheapApi;
-use App\Http\Namecheap\NameCheapDomains;
+use App\Http\Namecheap\NamecheapDomains;
 
 class DomainsController extends Controller
 {
@@ -76,36 +76,9 @@ class DomainsController extends Controller
         //$domain = $params['sld'] . '.' . $params['tld'];
         $vars = ['DomainList' => $domain_name];
         $data = $domains->check($vars)->status();
-        //dd($data);
+        $status = json_encode($domains->check($vars)->response());
 
-        if ($data == "OK") {
-            if ($domains->check($vars)->response() == 'false') {
-                echo 'not available';
-            }
-
-            if($domains->check($vars)->response() == 'true'){
-                echo 'available';
-            }
-
-        }else{
-            dd('ip error');
-        }
-        // if ($data->attributes()->Status == "ok") {
-        // }
-
-        // $response = Http::get('https://api.namecheap.com/xml.response?ApiUser=FleskTechnology&ApiKey=22b1bacbc0db4a469da3e82427fd255a&UserName=FleskTechnology&Command=namecheap.domains.check&ClientIp=102.89.34.16&DomainList='.$domain_name);
-        // dd (json_decode(($response->json())));
-        // if($response->CommandResponse->DomainCheckResult->attributes()->Available == 'true'){
-        //     dd(true);
-        // }elseif($response->CommandResponse->DomainCheckResult->attributes()->Available == 'false'){
-        //     dd(false);
-        // }
-
-        //dd($response->CommandResponse->DomainCheckResult->attributes()->Available);
-
-       //eturn view('frontend.order',compact('ip_address','domain_name'));
-
-
+       return view('frontend.order',compact('status','domain_name'));
 
     }
 
