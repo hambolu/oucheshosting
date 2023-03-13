@@ -74,7 +74,13 @@ class DomainsController extends Controller
         $domains = new NamecheapDomains($api);
 
         //$domain = $params['sld'] . '.' . $params['tld'];
+        
         $vars = ['DomainList' => $domain_name];
+        $extensions = ['com', 'net', 'org']; // add more extensions here
+        // $results = array();
+        // foreach ($extensions as $extension) {
+
+        // }
         $data = $domains->check($vars)->status();
         $status = json_encode($domains->check($vars)->response());
 

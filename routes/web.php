@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\frontend\FrontendController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DomainsController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,7 @@ Route::get('/services', [FrontendController::class, 'service_page']);
 Route::get('/blog', [FrontendController::class, 'blog_page']);
 Route::get('search', [DomainsController::class, 'search'])->name('search');
 Route::get('/order', [DomainsController::class, 'index'])->name('index');
+Route::get('/clients',[AdminController::class, 'allClients'])->name('allClients');
 
 Route::get('/contact', [FrontendController::class, 'contact_page']);
 

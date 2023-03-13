@@ -18,9 +18,9 @@
 						<nav class="main_nav ml-auto mr-auto">
 							<ul class="d-flex flex-row align-items-center justify-content-start">
 								<li class="active"><a href="/">Home</a></li>
-								<li><a href="/about">About us</a></li>
-								<li><a href="/services">Services</a></li>
-								<li><a href="/blog">News</a></li>
+								<li><a href="/wordpress">WordPress</a></li>
+								<li><a href="/hosting">Hosting</a></li>
+								<li><a href="/blog">Help</a></li>
 								<li><a href="/contact">Contact</a></li>
 							</ul>
 						</nav>
@@ -80,6 +80,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1">
+
 						<div class="domain_search_form_container">
 							<form action="{{ route('search') }}" id="domain_search_form" class="domain_search_form d-flex flex-md-row flex-column align-items-center justify-content-start">
 								<div class="d-flex flex-row align-items-center justify-content-start">
@@ -87,7 +88,7 @@
 
                                     <button class="domain_search_button d-flex flex-row align-items-center justify-content-center"><img src="frontend/images/search.png" alt="">Search</button>
 								</div>
-                               
+
 							</form>
 						</div>
 					</div>
@@ -220,142 +221,32 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<div class="pricing_container d-flex flex-row align-items-start justify-content-start flex-wrap">
-
-						<!-- Pricing Item -->
-						<div class="pricing_item text-center magic_fade_in">
-							<div class="pricing_title">Starter Pack</div>
-							<div class="pricing_content">
-								<div class="package_price">$ 9.90<span>/Month</span></div>
-								<div class="pricing_list">
-									<ul>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>50 GB Disk Space</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>1 sub-domain</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>5 E-mail Accounts</span>
-										</li>
-										<li class="d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/x.png" alt="">
-											<span>24/7 Support</span>
-										</li>
-										<li class="d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/x.png" alt="">
-											<span>Control Panel</span>
-										</li>
-									</ul>
-								</div>
-								<div class="pricing_button ml-auto mr-auto"><a href="#">Buy Now</a></div>
-							</div>
-						</div>
-
-						<!-- Pricing Item -->
-						<div class="pricing_item text-center magic_fade_in">
-							<div class="pricing_title">Basic Pack</div>
-							<div class="pricing_content">
-								<div class="package_price">$ 19.90<span>/Month</span></div>
-								<div class="pricing_list">
-									<ul>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>70 GB Disk Space</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>3 sub-domain</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>7 E-mail Accounts</span>
-										</li>
-										<li class="d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/x.png" alt="">
-											<span>24/7 Support</span>
-										</li>
-										<li class="d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/x.png" alt="">
-											<span>Control Panel</span>
-										</li>
-									</ul>
-								</div>
-								<div class="pricing_button ml-auto mr-auto"><a href="#">Buy Now</a></div>
-							</div>
-						</div>
-
-						<!-- Pricing Item -->
-						<div class="pricing_item text-center magic_fade_in">
-							<div class="pricing_title">Premium Pack</div>
-							<div class="pricing_content">
-								<div class="package_price">$ 39.90<span>/Month</span></div>
-								<div class="pricing_list">
-									<ul>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>90 GB Disk Space</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>5 sub-domain</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>10 E-mail Accounts</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>24/7 Support</span>
-										</li>
-										<li class="d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/x.png" alt="">
-											<span>Control Panel</span>
-										</li>
-									</ul>
-								</div>
-								<div class="pricing_button ml-auto mr-auto"><a href="#">Buy Now</a></div>
-							</div>
-						</div>
-
-						<!-- Pricing Item -->
-						<div class="pricing_item text-center magic_fade_in">
-							<div class="pricing_title">Pro Pack</div>
-							<div class="pricing_content">
-								<div class="package_price">$ 59.90<span>/Month</span></div>
-								<div class="pricing_list">
-									<ul>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>120 GB Disk Space</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>7 sub-domain</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>15 E-mail Accounts</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>24/7 Support</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="frontend/images/ok.png" alt="">
-											<span>Control Panel</span>
-										</li>
-									</ul>
-								</div>
-								<div class="pricing_button ml-auto mr-auto"><a href="#">Buy Now</a></div>
-							</div>
-						</div>
-
-					</div>
-				</div>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Get Started</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Get Started</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Get Started</a>
+                          </div>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</div>

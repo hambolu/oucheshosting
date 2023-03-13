@@ -14,9 +14,9 @@
                     <span class="menu-link">
 
                         <span class="menu-icon">
-                            <i class="fas fa-thin fa-grid-horizontal"></i>
+                            <img src="https://img.icons8.com/fluency/28/null/dashboard-layout.png"/>
                         </span>
-                        <span class="menu-title">Dashboards</span>
+                        <span class="menu-title"> Dashboards</span>
 
                     </span>
                 </a>
@@ -31,13 +31,104 @@
                     <span class="menu-link">
 
                         <span class="menu-icon">
-                            <i class="fas fa-thin fa-grid-horizontal"></i>
+                            <img src="https://img.icons8.com/neon/28/null/services.png"/>
                         </span>
 
-                        <span class="menu-title">Dashboards</span>
+                        <span class="menu-title">Services</span>
 
                     </span>
                 </a>
+
+
+            </div>
+            <div class="menu-item here show menu-accordion">
+
+                <a href="http://">
+                    <span class="menu-link">
+
+                        <span class="menu-icon">
+                            <i class="fa fa-thin fa-grid-horizontal"></i>
+                        </span>
+
+                        <span class="menu-title">Domains</span>
+
+                    </span>
+                </a>
+
+
+            </div>
+            <div class="menu-item here show menu-accordion">
+
+                <a href="http://">
+                    <span class="menu-link">
+
+                        <span class="menu-icon">
+                            <i class="fa fa-thin fa-grid-horizontal"></i>
+                        </span>
+
+                        <span class="menu-title">Tickets</span>
+
+                    </span>
+                </a>
+
+
+            </div>
+            <div class="menu-item here show menu-accordion">
+
+                <a href="http://">
+                    <span class="menu-link">
+
+                        <span class="menu-icon">
+                            <i class="fa fa-thin fa-grid-horizontal"></i>
+                        </span>
+
+                        <span class="menu-title">SSL</span>
+
+                    </span>
+                </a>
+
+
+            </div>
+
+            @if (Auth::user()->role == 'admin')
+
+            <div class="menu-item here show menu-accordion">
+
+                <a href="/clients">
+                    <span class="menu-link">
+
+                        <span class="menu-icon">
+                            <i class="fas fa-thin fa-grid-horizontal"></i>
+                        </span>
+
+                        <span class="menu-title">Cpanel Users</span>
+
+                    </span>
+                </a>
+
+
+            </div>
+            @endif
+
+            <div class="menu-item here show menu-accordion">
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+
+
+                    <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                                this.closest('form').submit();">
+                        <span class="menu-link">
+
+                            <span class="menu-icon">
+                                <i class="fas fa-thin fa-grid-horizontal"></i>
+                            </span>
+
+                            <span class="menu-title">Logout</span>
+
+                        </span>
+                    </a>
+                </form>
 
 
             </div>

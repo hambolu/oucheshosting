@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('services', function (Blueprint $table) {
+        Schema::create('ticket_replies', function (Blueprint $table) {
             $table->id();
-            $table->string('product_id')->nullable();
-            $table->float('price')->default(0);
-            $table->string('next_due_date')->nullable();
-            $table->bool('status')->default(0);
+            $table->string('ticket_id')->nullable();
+            $table->text('message')->nullable();
             $table->foreign('user_id')
                     ->references('id')
                     ->on('users')
@@ -30,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('services');
+        Schema::dropIfExists('ticket_replies');
     }
 };

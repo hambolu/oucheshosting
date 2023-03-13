@@ -122,7 +122,7 @@ p a:hover::after
 }
 p::selection
 {
-	
+
 }
 h1{font-size: 48px;}
 h2{font-size: 36px;}
@@ -139,14 +139,14 @@ h1, h2, h3, h4, h5, h6
 	font-weight: 700;
 	color: #1f1d22;
 }
-h1::selection, 
-h2::selection, 
-h3::selection, 
-h4::selection, 
-h5::selection, 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
 h6::selection
 {
-	
+
 }
 .form-control
 {
@@ -662,9 +662,9 @@ section
 	font-size: 24px !important;
 	font-weight: 500 !important;
 	color: #1f1d22 !important;
-} 
+}
 .domain_search_input:-ms-input-placeholder
-{ 
+{
 	font-size: 24px !important;
 	font-weight: 500 !important;
 	color: #1f1d22 !important;
@@ -994,9 +994,9 @@ section
 }
 .pricing_title
 {
-	height: 129px;
+	/* height: 129px; */
 	background: #4d1d85;
-	font-size: 30px;
+	/* font-size: 30px; */
 	font-weight: 700;
 	color: #FFFFFF;
 	line-height: 129px;
@@ -1017,7 +1017,7 @@ section
 }
 .package_price
 {
-	font-size: 36px;
+	font-size: 25px;
 	font-weight: 700;
 	color: #715691;
 }
@@ -1288,9 +1288,9 @@ section
 	font-size: 12px !important;
 	font-weight: 400 !important;
 	color: #FFFFFF !important;
-} 
+}
 .contact_input:-ms-input-placeholder
-{ 
+{
 	font-size: 12px !important;
 	font-weight: 400 !important;
 	color: #FFFFFF !important;

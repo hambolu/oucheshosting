@@ -10,6 +10,7 @@ class FrontendController extends Controller
     //
     public function main_page()
     {
+        
         return view('frontend.index');
     }
 

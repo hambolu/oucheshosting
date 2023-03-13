@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Transaction;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
+use Auth;
 
 class TransactionController extends Controller
 {
@@ -13,6 +15,8 @@ class TransactionController extends Controller
     public function index()
     {
         //
+        $trx = Transaction::all();
+
     }
 
     /**
@@ -29,6 +33,15 @@ class TransactionController extends Controller
     public function store(Request $request)
     {
         //
+        $trx = new Transaction();
+        $trx->product_id = $request->product_id;
+        $trx->trx_id     = "och_".Carbon::now()->timestamp;
+        $trx->domain_name = $request->domain_name;
+        $trx->gateway = $request->gateway;
+        $trx->price = $request->price;
+        $trx->description = $request->description;
+        $trx->user_id = Auth::id();
+        $trx->save();
     }
 
     /**

@@ -13,6 +13,18 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
+            $table->string('product_id')->nullable();
+            $table->string('trx_id')->nullable();
+            $table->string('domain_name')->nullable();
+            $table->string('domain_type')->nullable();
+            $table->string('gateway')->nullable();
+            $table->float('price')->default(0);
+            $table->text('description')->nullable();
+            $table->string('ip_address')->nullable();
+            $table->foreign('user_id')
+                    ->references('id')
+                    ->on('users')
+                    ->onDelete('cascade');
             $table->timestamps();
         });
     }
