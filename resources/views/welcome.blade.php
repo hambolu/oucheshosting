@@ -1,23 +1,894 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html class="no-js" lang="zxx">
 
-        <title>Laravel</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ouches Hosting - Domain and Web Hosting</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
+    <!-- Place favicon.png in the root directory -->
 
-        <!-- Styles -->
-        <style>
-            /* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Figtree, sans-serif;font-feature-settings:normal}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.relative{position:relative}.mx-auto{margin-left:auto;margin-right:auto}.mx-6{margin-left:1.5rem;margin-right:1.5rem}.ml-4{margin-left:1rem}.mt-16{margin-top:4rem}.mt-6{margin-top:1.5rem}.mt-4{margin-top:1rem}.-mt-px{margin-top:-1px}.mr-1{margin-right:0.25rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.h-16{height:4rem}.h-7{height:1.75rem}.h-6{height:1.5rem}.h-5{height:1.25rem}.min-h-screen{min-height:100vh}.w-auto{width:auto}.w-16{width:4rem}.w-7{width:1.75rem}.w-6{width:1.5rem}.w-5{width:1.25rem}.max-w-7xl{max-width:80rem}.shrink-0{flex-shrink:0}.scale-100{--tw-scale-x:1;--tw-scale-y:1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.items-center{align-items:center}.justify-center{justify-content:center}.gap-6{gap:1.5rem}.gap-4{gap:1rem}.self-center{align-self:center}.rounded-lg{border-radius:0.5rem}.rounded-full{border-radius:9999px}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity))}.bg-dots-darker{background-image:url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E")}.from-gray-700\/50{--tw-gradient-from:rgb(55 65 81 / 0.5);--tw-gradient-to:rgb(55 65 81 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0);--tw-gradient-stops:var(--tw-gradient-from), transparent, var(--tw-gradient-to)}.bg-center{background-position:center}.stroke-red-500{stroke:#ef4444}.stroke-gray-400{stroke:#9ca3af}.p-6{padding:1.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.text-center{text-align:center}.text-right{text-align:right}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-gray-500\/20{--tw-shadow-color:rgb(107 114 128 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-red-500 *::selection{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.selection\:bg-red-500::selection{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.hover\:text-gray-900:hover{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.hover\:text-gray-700:hover{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity))}.focus\:rounded-sm:focus{border-radius:0.125rem}.focus\:outline:focus{outline-style:solid}.focus\:outline-2:focus{outline-width:2px}.focus\:outline-red-500:focus{outline-color:#ef4444}.group:hover .group-hover\:stroke-gray-600{stroke:#4b5563}@media (prefers-reduced-motion: no-preference){.motion-safe\:hover\:scale-\[1\.01\]:hover{--tw-scale-x:1.01;--tw-scale-y:1.01;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}}@media (prefers-color-scheme: dark){.dark\:bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.dark\:bg-gray-800\/50{background-color:rgb(31 41 55 / 0.5)}.dark\:bg-red-800\/20{background-color:rgb(153 27 27 / 0.2)}.dark\:bg-dots-lighter{background-image:url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(255,255,255,0.07)'/%3E%3C/svg%3E")}.dark\:bg-gradient-to-bl{background-image:linear-gradient(to bottom left, var(--tw-gradient-stops))}.dark\:stroke-gray-600{stroke:#4b5563}.dark\:text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity))}.dark\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:shadow-none{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.dark\:ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.dark\:ring-inset{--tw-ring-inset:inset}.dark\:ring-white\/5{--tw-ring-color:rgb(255 255 255 / 0.05)}.dark\:hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.group:hover .dark\:group-hover\:stroke-gray-400{stroke:#9ca3af}}@media (min-width: 640px){.sm\:fixed{position:fixed}.sm\:top-0{top:0px}.sm\:right-0{right:0px}.sm\:ml-0{margin-left:0px}.sm\:flex{display:flex}.sm\:items-center{align-items:center}.sm\:justify-center{justify-content:center}.sm\:justify-between{justify-content:space-between}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:gap-8{gap:2rem}.lg\:p-8{padding:2rem}}
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-            
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{ asset('landing/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/meanmenu.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/default.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/responsive.css') }}">
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <div class="header-area header-transparent header-space pt-45 pb-45">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-5 d-flex align-items-lg-center">
+                        <div class="logo">
+                            <a href="index.html"> <img src="{{ asset('landing/img/logo/logo2.png') }}" alt="" width="180px"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block">
+                        <div class="main-menu text-center">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li><a href="index.html">Home </a></li>
+                                    <li><a href="#services">Services </a></li>
+                                    <li><a href="#price">Price </a></li>
+                                    <li><a href="#faq">FAQ </a></li>
+                                    <li><a href="#whyUs">Why Us </a></li>
+                                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xl-3 col-lg-3 col-md-7 d-flex flex-row-reverse align-items-center justify-content-xl-end">
+
+                        <div class="header-btn d-none d-md-block">
+                            <a class="btn" href="#"><i class="far fa-key"></i> Login</a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
+    </header>
+    <!-- header start -->
+
+    <main>
+        <!-- slider start -->
+        <section class="slider-area position-relative">
+            <div class="slider-ac">
+                <div class="single-slider slider-height" style="background-image:url(landing/img/slider/slide-bg.png)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 offset-xl-2">
+                                <div class="slider-text pt-180 text-center">
+
+                                    <h2 class="wow fadeInUp animated" data-wow-delay="0.6s">
+                                        Reliable Hosting Solutions
+                                    </h2>
+                                    <div class="slider-btn wow fadeInUp animated" data-wow-delay="0.9s">
+                                        <a href="#" class="btn">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slider-bottom-img wow fadeInUp animated" data-wow-delay="1.3s">
+                            <img src="landing/img/slider/server.png" alt="" class="image-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- slider end -->
+        <!-- domain-search-area  start -->
+        <section class="domain-search-area pt-60 pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2">
+
+                        <div class="domain-search domain-list mt-35 text-center">
+                            <ul>
+                                <li><a class="active" href="#">.com / <span>₦18,000</span></a></li>
+                                <li><a href="#">.net / <span>₦32,986</span></a></li>
+                                <li><a href="#">.org / <span>₦30,934</span></a></li>
+                                <li><a href="#">.africa / <span>₦11,000</span></a></li>
+                                <li><a href="#">.com.ng / <span>₦3,800</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- domain-search-area  end -->
+        <!-- services-area start -->
+        <section id="services" class="services-area pt-115 pb-40">
+            <div class="container">
+                <div class="row align-items-center mb-40">
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="section-title mb-30">
+                            <h2>Our Services</h2>
+                            <p>Get fast, secure, and reliable web hosting services from us. Our hosting plans come with
+                                24/7 support, and a 99.9% uptime guarantee.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-4">
+                        <div class="section-link text-left text-lg-right mb-30">
+                            <a href="#" class="btn btn-soft-border">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-box text-center mb-80">
+                            <div class="services-icon mb-35">
+                                <img src="landing/img/icon/s01.png" alt="">
+                            </div>
+                            <div class="services-content">
+                                <h3><a href="#">Shared Hosting</a></h3>
+
+                                <p>Shared Hosting offers affordable pricing and is easy to set up and manage. It
+                                    provides scalable resources to accommodate the growth of your website and comes with
+                                    24/7 technical support, making it suitable for small to medium-sized websites.</p>
+                                <a class="services-link" href="#"><i class="far fa-chevron-right"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-box text-center mb-80">
+                            <div class="services-icon mb-35">
+                                <img src="landing/img/icon/s02.png" alt="">
+                            </div>
+                            <div class="services-content">
+                                <h3><a href="#">VPS Hosting</a></h3>
+                                <p>Virtual Private Server (VPS) hosting provides high-performance hardware and
+                                    flexibility, making it excellent for hosting. It provides a free snapshot, weekly
+                                    backups, full root access, a dedicated IP address, and unlimited website</p>
+                                <a class="services-link" href="#"><i class="far fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-box text-center mb-80">
+                            <div class="services-icon mb-35">
+                                <img src="landing/img/icon/s03.png" alt="">
+                            </div>
+                            <div class="services-content">
+                                <h3><a href="#">Reseller Hosting</a></h3>
+                                <p>Reseller hosting plans let you start you own web hosting with
+                                    high-performance hosting features to your client accounts.
+                                    All reseller packages support free WordPress installation and updates, daily
+                                    backups, and more.</p>
+                                <a class="services-link" href="#"><i class="far fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-box text-center mb-80">
+                            <div class="services-icon mb-35">
+                                <img src="landing/img/icon/s04.png" alt="">
+                            </div>
+                            <div class="services-content">
+                                <h3><a href="#">Cloud Hosting</a></h3>
+                                <p>Cloud hosting offers scalability, reliability, flexibility, free and personalized
+                                    support, as well as paid plans with dedicated help and faster response times..</p>
+                                <a class="services-link" href="#"><i class="far fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-box text-center mb-80">
+                            <div class="services-icon mb-35">
+                                <img src="landing/img/icon/s05.png" alt="">
+                            </div>
+                            <div class="services-content">
+                                <h3><a href="#">Dedicated Hosting</a></h3>
+                                <p>You have full control over the server and can access and modify all files and
+                                    settings.customize the server's hardware and software to meet your specific needs
+                                    with dedicated IP address</p>
+                                <a class="services-link" href="#"><i class="far fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-box text-center mb-80">
+                            <div class="services-icon mb-35">
+                                <img src="landing/img/icon/s06.png" alt="">
+                            </div>
+                            <div class="services-content">
+                                <h3><a href="#">Domain Name</a></h3>
+                                <p>A domain name gives your website a professional and memorable identity, making it
+                                    easier to establish your brand and online presence.</p>
+                                <a class="services-link" href="#"><i class="far fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="domain-search domain-list mt-35 text-center">
+                        <ul>
+                            <li><a href="#"><span>Disk space and bandwidth</span></a></li>
+                            <li><a href="#"><span>Domain name support</span></a></li>
+                            <li><a href="#"><span>Email accounts and FTP access</span></a></li>
+                            <li><a href="#"><span>Control panel (e.g., cPanel) for easy management</span></a>
+                            </li>
+                            <li><a href="#"><span>Script installers (e.g., WordPress)</span></a></li>
+                            <li><a href="#"><span>Security features (e.g., firewall, backups)</span></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- services-area end -->
+
+        <!-- pricing area start -->
+        <section id="price" class="pricing-area gray-bg pt-115 pb-120">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                        <div class="section-title text-center mb-70">
+                            <h2>Price & Plans</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="pricing-wrapper white-bg text-center mb-30">
+                            <div class="price-icon mb-15">
+                                <img src="landing/img/icon/p-01.png" alt="">
+                            </div>
+                            <div class="pricin-title mb-20">
+                                <h3>WordPress Hosting</h3>
+                            </div>
+                            <div class="price-body">
+                                <h2 style="font-size: 25px;"><span>₦</span> 1,200 <span class="month">/mo</span></h2>
+                                <li>Easy to set up and manage</li>
+                                <li>Scalable resources</li>
+                                <li>24/7 technical support</li>
+                                <li>Email accounts</li>
+                                <li>Script installers (e.g., WordPress)</li>
+                                <li>Security features (e.g., firewall, backups)</li>
+                            </div>
+                            <div class="price-link">
+                                <a href="#" class="btn btn-soft-border">Purchase Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="pricing-wrapper white-bg text-center mb-30">
+                            <div class="price-icon mb-15">
+                                <img src="landing/img/icon/p-02.png" alt="">
+                            </div>
+                            <div class="pricin-title mb-20">
+                                <h3>Cloud Hosting</h3>
+                            </div>
+                            <div class="price-body">
+                                <h2 style="font-size: 25px;"><span>₦</span> 20,000 <span class="month">/mo</span>
+                                </h2>
+                                <li>Easy to set up and manage</li>
+                                <li>Scalable resources</li>
+                                <li>24/7 technical support</li>
+                                <li>Email accounts,FTP access</li>
+                                <li>Script installers (e.g., WordPress)</li>
+                                <li>Panel (CloudPanel, CyberPanel)</li>
+                                <li>Security features (e.g., firewall, backups)</li>
+                            </div>
+                            <div class="price-link">
+                                <a href="#" class="btn btn-soft-border">Purchase Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="pricing-wrapper white-bg text-center mb-30">
+                            <div class="price-icon mb-15">
+                                <img src="landing/img/icon/p-03.png" alt="">
+                            </div>
+                            <div class="pricin-title mb-20">
+                                <h3>Shared Hosting</h3>
+                            </div>
+                            <div class="price-body">
+                                <h2 style="font-size: 25px;"><span>₦</span> 2,083 <span class="month">/mo</span></h2>
+                                <li>Easy to set up and manage</li>
+                                <li>Scalable resources</li>
+                                <li>24/7 technical support</li>
+                                <li>Email accounts,FTP access</li>
+                                <li>Script installers (e.g., WordPress)</li>
+                                <li>Security features (e.g., firewall, backups)</li>
+                            </div>
+                            <div class="price-link">
+                                <a href="#" class="btn btn-soft-border">Purchase Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- pricing area end -->
+
+        <!-- faq-area start -->
+        <section id="faq" class="faq-area grad-bg pt-120 pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="faq-img mb-30">
+                            <img src="landing/img/bg/illustration.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 ">
+                        <div class="faq-wrapper mb-30">
+                            <div class="section-title section-title-white mb-70">
+                                <span>Faq</span>
+                                <h3>Get Every Single Answer
+                                    From Here.</h3>
+                                <h4>We're here to help. Get in touch and we'll get back to you
+                                    as soon as we can.</h4>
+                            </div>
+                            <div class="faq-box">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0">
+                                                <a href="#" class="" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    What is the difference between Shared Hosting and VPS Hosting?
+                                                </a>
+                                            </h2>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>Shared Hosting is a cost-effective option where multiple websites
+                                                    share the same server resources. VPS Hosting provides a dedicated
+                                                    virtual server with more resources and control..</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0">
+                                                <a href="#" class="collapsed" data-toggle="collapse"
+                                                    data-target="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    How do I upload my website to your servers?
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>You can upload your website using FTP, SFTP, or our File Manager tool
+                                                    in the control panel.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0">
+                                                <a href="#" class="collapsed" data-toggle="collapse"
+                                                    data-target="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                    Can I upgrade or downgrade my web hosting plan?
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>Yes, you can upgrade or downgrade your web hosting plan at any time
+                                                    from your control panel.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq-area end -->
+
+        <!-- chose-area start -->
+        <section id="whyUs" class="chose-area pt-115 pb-90">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                        <div class="section-title text-center mb-70">
+                            <h2>Why Choose Us?</h2>
+                            <p>Our web hosting services are designed to provide you with the speed, security, and
+                                reliability you need to succeed in today's digital landscape.
+                                Sign up for our web hosting services today and experience the difference for yourself.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row chose-row">
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="chose-box text-center mb-30">
+                            <img src="landing/img/chose/c01.png" alt="">
+                            <div class="chose-content">
+                                <span>01</span>
+                                <h3>Fast Loading Speeds</h3>
+                                <p>Our web hosting plans come with SSD storage, which means your
+                                    website will load faster than ever before. With our optimized servers, you can enjoy
+                                    lightning-fast loading speeds that will improve your user
+                                    experience and boost your search engine rankings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="chose-box text-center active mb-30">
+                            <img src="landing/img/chose/c03.png" alt="">
+                            <div class="chose-content">
+                                <span>02</span>
+                                <h3>Secure and Reliable</h3>
+                                <p>We take security and reliability seriously. Our servers are protected by robust
+                                    firewalls and intrusion detection systems, ensuring your website is safe from cyber
+                                    threats. Plus, our 99.9% uptime guarantee ensures your website is always available
+                                    to your visitors.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="chose-box text-center mb-30">
+                            <img src="landing/img/chose/c02.png" alt="">
+                            <div class="chose-content">
+                                <span>03</span>
+                                <h3>24/7 Support</h3>
+                                <p>Our expert support team is available 24/7 to help you with any questions or issues
+                                    you may have. Whether you need help with website migration, technical issues, or
+                                    general inquiries, we're here to assist you every step of the way.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="domain-search domain-list mt-35 text-center">
+                    <ul>
+                        <li><a href="#"><span>Free website migration</span></a></li>
+                        <li><a href="#"><span>Free SSL certificates</span></a></li>
+                        <li><a href="#"><span>Unlimited email accounts</span></a></li>
+                        <li><a href="#"><span>Unlimited databases</span></a></li>
+                        <li><a href="#"><span>1-click installer for popular apps</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- chose-area end -->
+        <!-- testimonail area start -->
+        <section class="testimonail-area grad-bg pt-115 pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="section-title section-title-white mb-70">
+                            <h2>Testimonials</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row activ-testimonai">
+                    <div class="col-xl-12">
+                        <div class="testimonail-wraper mb-30">
+                            <div class="testimonail-titles">
+                                <div class="testimonail-icon">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <span>“ Design Quality ”</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci
+                                didunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc itation
+                                ullamco
+                                laboris nisi. </p>
+                            <div class="testimonail-author">
+                                <div class="testimonail-img">
+                                    <img src="landing/img/author/author.png" alt="">
+                                </div>
+                                <h5>Rosalina D. Williamson</h5>
+                                <span>Founder, Google</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="testimonail-wraper mb-30">
+                            <div class="testimonail-titles">
+                                <div class="testimonail-icon">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <span>“ Development ”</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci
+                                didunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc itation
+                                ullamco
+                                laboris nisi. </p>
+                            <div class="testimonail-author">
+                                <div class="testimonail-img">
+                                    <img src="landing/img/author/author1.png" alt="">
+                                </div>
+                                <h5>Rosalina D. Williamson</h5>
+                                <span>Founder, Google</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="testimonail-wraper mb-30">
+                            <div class="testimonail-titles">
+                                <div class="testimonail-icon">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <span>“ Design Quality ”</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci
+                                didunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc itation
+                                ullamco
+                                laboris nisi. </p>
+                            <div class="testimonail-author">
+                                <div class="testimonail-img">
+                                    <img src="landing/img/author/author.png" alt="">
+                                </div>
+                                <h5>Rosalina D. Williamson</h5>
+                                <span>Founder, Google</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="testimonail-wraper mb-30">
+                            <div class="testimonail-titles">
+                                <div class="testimonail-icon">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <span>“ Development ”</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci
+                                didunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc itation
+                                ullamco
+                                laboris nisi. </p>
+                            <div class="testimonail-author">
+                                <div class="testimonail-img">
+                                    <img src="landing/img/author/author1.png" alt="">
+                                </div>
+                                <h5>Rosalina D. Williamson</h5>
+                                <span>Founder, Google</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="testimonail-wraper mb-30">
+                            <div class="testimonail-titles">
+                                <div class="testimonail-icon">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <span>“ Hosting ”</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci
+                                didunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc itation
+                                ullamco
+                                laboris nisi. </p>
+                            <div class="testimonail-author">
+                                <div class="testimonail-img">
+                                    <img src="landing/img/author/author.png" alt="">
+                                </div>
+                                <h5>Rosalina D. Williamson</h5>
+                                <span>Founder, Google</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonail area end -->
+        <!-- news feed area start -->
+        <section class="news-feed-area pt-115 pb-115">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                        <div class="section-title text-center mb-70">
+                            <h2>News Feeds</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="latest-feed mb-45">
+                            <div class="news-feed-img">
+                                <a href="#"><img src="landing/img/blog/latest1.jpg" alt=""></a>
+                            </div>
+                            <div class="news-feed-info">
+                                <div class="news-feed-mata">
+                                    <ul>
+                                        <li><img src="landing/img/blog/lat.png" alt=""> <span><a
+                                                    href="#">Aurthur William</a></span></li>
+                                        <li><span><i class="fas fa-calendar-week"></i> 23 Mar 2019</span></li>
+                                    </ul>
+                                </div>
+                                <div class="news-feed-titles">
+                                    <h4><a href="#">Hosting as far as the eye is can see! visitor.</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipis icing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="latest-feed mb-45">
+                            <div class="news-feed-img">
+                                <a href="#"><img src="landing/img/blog/latest2.jpg" alt=""></a>
+                            </div>
+                            <div class="news-feed-info">
+                                <div class="news-feed-mata">
+                                    <ul>
+                                        <li><img src="landing/img/blog/let.png" alt=""> <span><a href="#">Salim
+                                                    Rana</a></span></li>
+                                        <li><span><i class="fas fa-calendar-week"></i> 23 Mar 2019</span></li>
+                                    </ul>
+                                </div>
+                                <div class="news-feed-titles">
+                                    <h4><a href="#">Hosting as far as the eye is can see! visitor.</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipis icing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="latest-feed mb-45">
+                            <div class="news-feed-img">
+                                <a href="#"><img src="landing/img/blog/latest3.jpg" alt=""></a>
+                            </div>
+                            <div class="news-feed-info">
+                                <div class="news-feed-mata">
+                                    <ul>
+                                        <li><img src="landing/img/blog/let1.png" alt=""> <span><a href="#">Azad
+                                                    Mia</a></span></li>
+                                        <li><span><i class="fas fa-calendar-week"></i> 23 Mar 2019</span></li>
+                                    </ul>
+                                </div>
+                                <div class="news-feed-titles">
+                                    <h4><a href="#">Hosting as far as the eye is can see! visitor.</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipis icing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-60">
+                    <div class="col-md-12">
+                        <div class="news-feed-bottom-img">
+                            <img src="landing/img/icon/line.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- news feed area end -->
+        <!-- brand area -->
+        <section class="brand-area pb-120">
+            <div class="container">
+                <div class="row brand-active">
+                    <div class="col-12">
+                        <div class="single-brand">
+                            <img src="landing/img/brand/brand3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="single-brand">
+                            <img src="landing/img/brand/brand2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="single-brand">
+                            <img src="landing/img/brand/brand1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="single-brand">
+                            <img src="landing/img/brand/brand4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="single-brand">
+                            <img src="landing/img/brand/brand5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="single-brand">
+                            <img src="landing/img/brand/brand1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- brand end -->
+    </main>
+
+    <!-- footer start -->
+    <footer>
+        <section class="footer-area pt-110 pb-90 bg-footer" data-background="img/bg/footer-bg.jpg">
+            <div class="container">
+                <div class="row d-flex justify-content-start justify-content-md-between align-items-center">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="footer-sing-up mb-30">
+                            <h5>Get an easy quote</h5>
+                            <h2>Sign Up For Web Hosting Today!</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-5 col-lg-3">
+                        <div class="footer-left-info mb-30">
+                            <h5>Starting At Only</h5>
+                            <h2>₦1,200<span>/mo*</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-7 col-lg-3">
+                        <div class="footer-btn mb-30">
+                            <a href="#" class="btn btn-grad">Get Start Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-border"></div>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-4 col-lg-4 mb-30">
+                        <div class="footer-bottom-area">
+                            <div class="widgets">
+                                <div class="footer-logo">
+                                    <img src="{{ asset('landing/img/logo/logo2.png') }}" alt="" width="180px">
+                                </div>
+                                <p>Ouches Hosting provide fast, secure and reliable Services..
+                                    OuchesHosting is a product of Ouches Technology
+                                </p>
+                                <ul class="adress">
+                                    <li><i class="fa fa-map-marker-alt"></i> <span>Lagos, Nigeria</span></li>
+                                    <li><i class="fa fa-envelope"></i> <span>help@oucheshosting.com</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-social text-center">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-8">
+                        <div class="footer-right-box pl-70">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-4">
+                                    <div class="wigets mb-30">
+                                        <div class="widgets-titles">
+                                            <h4>Our Products</h4>
+                                        </div>
+                                        <div class="wegets-body">
+                                            <ul>
+                                                <li><a href="#">Shared</a></li>
+                                                <li><a href="#">hosting</a></li>
+                                                <li><a href="#">WordPress</a></li>
+                                                <li><a href="#">VPS</a></li>
+                                                <li><a href="#">hosting</a></li>
+                                                <li><a href="#">Dedicated</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4">
+                                    <div class="wigets mb-30">
+                                        <div class="widgets-titles">
+                                            <h4>Get Support</h4>
+                                        </div>
+                                        <div class="wegets-body">
+                                            <ul>
+                                                <li><a href="#">Shared</a></li>
+                                                <li><a href="#">hosting</a></li>
+                                                <li><a href="#">WordPress</a></li>
+                                                <li><a href="#">VPS</a></li>
+                                                <li><a href="#">hosting</a></li>
+                                                <li><a href="#">Dedicated</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4">
+                                    <div class="wigets mb-30">
+                                        <div class="widgets-titles">
+                                            <h4>Our Company</h4>
+                                        </div>
+                                        <div class="wegets-body">
+                                            <ul>
+                                                <li><a href="#">Chat</a></li>
+                                                <li><a href="#">Tickets</a></li>
+                                                <li><a href="#">Knowledge</a></li>
+                                                <li><a href="#">base</a></li>
+                                                <li><a href="#">System</a></li>
+                                                <li><a href="#">Marketing</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+    <!-- footer end -->
+
+
+    <!-- JS here -->
+    <script src="{{ asset('landing/js/vendor/modernizr-3.5.0.min.js') }}"></script>
+    <script src="{{ asset('landing/js/vendor/jquery-1.12.4.min.js') }}"></script>
+    <script src="{{ asset('landing/js/popper.min.js') }}"></script>
+    <script src="{{ asset('landing/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('landing/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('landing/js/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('landing/js/one-page-nav-min.js') }}"></script>
+    <script src="{{ asset('landing/js/slick.min.js') }}"></script>
+    <script src="{{ asset('landing/js/jquery.meanmenu.min.js') }}"></script>
+    <script src="{{ asset('landing/js/ajax-form.js') }}"></script>
+    <script src="{{ asset('landing/js/wow.min.js') }}"></script>
+    <script src="{{ asset('landing/js/jquery.scrollUp.min.js') }}"></script>
+    <script src="{{ asset('landing/js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('landing/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('landing/js/plugins.js') }}"></script>
+    <script src="{{ asset('landing/js/main.js') }}"></script>
+</body>
+
 </html>

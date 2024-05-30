@@ -18,7 +18,9 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', [FrontendController::class, 'main_page']);
+Route::get('/',function(){
+    return view('welcome');
+});
 Route::get('/about', [FrontendController::class, 'about_page']);
 Route::get('/services', [FrontendController::class, 'service_page']);
 Route::get('/blog', [FrontendController::class, 'blog_page']);
