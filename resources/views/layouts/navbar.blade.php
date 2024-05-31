@@ -10,7 +10,7 @@
 
             <div class="menu-item here show menu-accordion">
 
-                <a href="http://">
+                <a href="/">
                     <span class="menu-link">
 
                         <span class="menu-icon">
@@ -27,7 +27,7 @@
 
             <div class="menu-item here show menu-accordion">
 
-                <a href="http://">
+                <a href="services">
                     <span class="menu-link">
 
                         <span class="menu-icon">
@@ -43,11 +43,11 @@
             </div>
             <div class="menu-item here show menu-accordion">
 
-                <a href="http://">
+                <a href="/domain">
                     <span class="menu-link">
 
                         <span class="menu-icon">
-                            <i class="fa fa-thin fa-grid-horizontal"></i>
+                            <img src="https://img.icons8.com/color/28/domain--v1.png" />
                         </span>
 
                         <span class="menu-title">Domains</span>
@@ -59,11 +59,11 @@
             </div>
             <div class="menu-item here show menu-accordion">
 
-                <a href="http://">
+                <a href="/tickets">
                     <span class="menu-link">
 
                         <span class="menu-icon">
-                            <i class="fa fa-thin fa-grid-horizontal"></i>
+                            <img  src="https://img.icons8.com/color/28/000000/two-tickets.png" />
                         </span>
 
                         <span class="menu-title">Tickets</span>
@@ -75,11 +75,11 @@
             </div>
             <div class="menu-item here show menu-accordion">
 
-                <a href="http://">
+                <a href="/ssl">
                     <span class="menu-link">
 
                         <span class="menu-icon">
-                            <i class="fa fa-thin fa-grid-horizontal"></i>
+                            <img  src="https://img.icons8.com/fluency/28/tls.png" />
                         </span>
 
                         <span class="menu-title">SSL</span>
@@ -98,10 +98,26 @@
                     <span class="menu-link">
 
                         <span class="menu-icon">
-                            <i class="fas fa-thin fa-grid-horizontal"></i>
+                            <img  src="https://img.icons8.com/fluency/28/group.png" />
                         </span>
 
                         <span class="menu-title">Cpanel Users</span>
+
+                    </span>
+                </a>
+
+
+            </div>
+            <div class="menu-item here show menu-accordion">
+
+                <a href="/transactions">
+                    <span class="menu-link">
+
+                        <span class="menu-icon">
+                            <img src="https://img.icons8.com/color-glass/28/transaction.png"/>
+                        </span>
+
+                        <span class="menu-title">Transactions</span>
 
                     </span>
                 </a>
@@ -121,7 +137,7 @@
                         <span class="menu-link">
 
                             <span class="menu-icon">
-                                <i class="fas fa-thin fa-grid-horizontal"></i>
+                                <img  src="https://img.icons8.com/fluency/28/exit--v1.png" />
                             </span>
 
                             <span class="menu-title">Logout</span>

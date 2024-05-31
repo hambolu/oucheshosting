@@ -15,10 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('ticket_id')->nullable();
             $table->text('message')->nullable();
-            $table->foreign('user_id')
-                    ->references('id')
-                    ->on('users')
-                    ->onDelete('cascade');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

@@ -82,7 +82,7 @@
                                                         <th class="text-start ">Plan</th>
                                                         <th class="text-start ">Disk Used</th>
                                                         <th class="text-start ">Disk Limit</th>
-                                                        <th class="text-start">Suspended</th>
+                                                        <th class="text-start">Status</th>
                                                         <th class="text-start">Action</th>
                                                     </tr>
                                                     <!--end::Table row-->

@@ -13,7 +13,7 @@
 		<meta property="og:site_name" content="Ouches Hosting " />
 
 
-		<link rel="shortcut icon" href="frontend/images/icon.png" />
+		<link rel="shortcut icon" href="{{ asset('frontend/images/icon.png') }}" />
 		<!--begin::Fonts(mandatory for all pages)-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" type='text/css' />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />

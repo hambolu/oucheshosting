@@ -21,10 +21,7 @@ return new class extends Migration
             $table->float('price')->default(0);
             $table->text('description')->nullable();
             $table->string('ip_address')->nullable();
-            $table->foreign('user_id')
-                    ->references('id')
-                    ->on('users')
-                    ->onDelete('cascade');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

@@ -16,11 +16,8 @@ return new class extends Migration
             $table->string('product_id')->nullable();
             $table->float('price')->default(0);
             $table->string('next_due_date')->nullable();
-            $table->bool('status')->default(0);
-            $table->foreign('user_id')
-                    ->references('id')
-                    ->on('users')
-                    ->onDelete('cascade');
+            $table->boolean('status')->default(false);
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

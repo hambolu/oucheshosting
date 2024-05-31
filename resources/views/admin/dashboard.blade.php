@@ -52,7 +52,7 @@
                                             Dashboard</h1>
 
                                     </div>
-{{ \Carbon\Carbon::now()->toDayDateTimeString() }}
+
                                     <div class="d-flex align-items-center gap-2 gap-lg-3">
 
 
@@ -99,8 +99,7 @@
 
                                                             <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">0</span>
 
-                                                            <span
-                                                                class="text-gray-400 pt-1 fw-semibold fs-6">Domains</span>
+                                                            <span class="text-gray-400 pt-1 fw-semibold fs-6">Domains</span>
 
                                                         </div>
                                                     </a>
@@ -123,8 +122,7 @@
 
                                                             <span class="fs-2hx fw-bold text-dark me-2 lh-1 ls-n2">0</span>
 
-                                                            <span
-                                                                class="text-gray-400 pt-1 fw-semibold fs-6">Tickets</span>
+                                                            <span class="text-gray-400 pt-1 fw-semibold fs-6">Tickets</span>
 
                                                         </div>
                                                     </a>

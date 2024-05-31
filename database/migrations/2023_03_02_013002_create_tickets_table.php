@@ -17,11 +17,8 @@ return new class extends Migration
             $table->string('description')->nullable();
             $table->string('image')->nullable();
             $table->string('ip_address')->nullable();
-            $table->boolval('status')->default(0);
-            $table->foreign('user_id')
-                    ->references('id')
-                    ->on('users')
-                    ->onDelete('cascade');
+            $table->boolean('status')->default(false);
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

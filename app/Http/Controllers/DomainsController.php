@@ -16,7 +16,7 @@ class DomainsController extends Controller
     public function index()
     {
         //
-        return view('frontend.order');
+        return view('client.order');
 
     }
 

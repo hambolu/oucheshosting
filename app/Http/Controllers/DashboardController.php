@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Auth;
+use App\Http\Controllers\Controller;
 use App\Traits\Whm;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class DashboardController extends Controller
 {
@@ -13,15 +15,16 @@ class DashboardController extends Controller
 
     public function dashboard()
     {
-       $whm = $this->checkDomain();
-       dd($whm);
+        //    $whm = $this->checkDomain();
+        //    dd($whm);
         if (Auth::user()->role == 'admin') {
             return view('admin.dashboard');
-        }elseif (Auth::user()->role == 'admin') {
+        }
+
+        if (Auth::user()->role == 'user') {
 
             return view('client.dashboard');
-        }else{
-            return abort(404);
         }
+        return abort(404);
     }
 }
